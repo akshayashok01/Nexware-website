@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Builder Cards</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f7fa;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 40px;
+        }
+        
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-icon {
+            width: 80px;
+            height: 80px;
+            background: #3498db;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 30px;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover .card-icon {
+            transform: scale(1.1);
+        }
+        
+        .card h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .card p {
+            color: #7f8c8d;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        /* Different colors for each icon */
+        .card:nth-child(1) .card-icon { background: #3498db; }
+        .card:nth-child(2) .card-icon { background: #e74c3c; }
+        .card:nth-child(3) .card-icon { background: #2ecc71; }
+        .card:nth-child(4) .card-icon { background: #f39c12; }
+        .card:nth-child(5) .card-icon { background: #9b59b6; }
+    </style>
+</head>
+<body>
+    <h1>Application Builder</h1>
+    
+    <div class="cards-container">
+        <div class="card">
+            <div class="card-icon">📱</div>
+            <h2>Custom UI</h2>
+            <p>Build pages with forms, widgets, custom analytics, and manage access permissions based on users' roles. Set customized landing pages based on these roles and enable users to navigate accordingly.</p>
+        </div>
+        
+        <div class="card">
+            <div class="card-icon">🛠️</div>
+            <h2>Developer Sandbox</h2>
+            <p>Accelerate your time to deployment by enabling your testing and development teams to work in tandem with end-users. Optimize application design, identify bugs, and deliver a streamlined developer experience.</p>
+        </div>
+        
+        <div class="card">
+            <div class="card-icon">🚀</div>
+            <h2>Application Deployment</h2>
+            <p>Deploying applications isn't rocket science anymore. Validate and deploy applications, extend the code, modify your app's capabilities, and keep releasing new builds seamlessly.</p>
+        </div>
+        
+        <div class="card">
+            <div class="card-icon">🔗</div>
+            <h2>Extensive Integrations</h2>
+            <p>Yes, we

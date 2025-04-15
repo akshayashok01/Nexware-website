@@ -113,4 +113,13 @@ const words = ["Enterprises", "Ecommerce", "SMEs"];
           },
         });
       });
-      
+      // Add to script.js
+const menuToggle = document.createElement('button');
+menuToggle.className = 'menu-toggle';
+menuToggle.innerHTML = '<i class="bx bx-menu"></i>';
+document.querySelector('header').appendChild(menuToggle);
+
+menuToggle.addEventListener('click', () => {
+  const navBox = document.getElementById('nav-box');
+  navBox.classList.toggle('active');
+});
